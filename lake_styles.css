@@ -2,7 +2,11 @@
 
 @font-face {
     font-family: Champagne;
-
+    src: url("cac_champagne.woff") format('.woff'),
+        url("cac_champagne.ttf") format('.tff');
+    font-family: Dobkin;
+    src: url("DobkinPlain.woff") format('woff'),
+        url("DobkinPlain.ttf") format('tff')
 }
 
 /*
@@ -17,3 +21,75 @@
    Filename: lake_styles.css
 
 */
+/* HTML and Body Styles */
+/*This one gave me anxiety, it doesn't make sense to do the styles with no knowledge of what a client wants because the only reason you the coder would decide is if it was their own.*/
+html {
+    background-color: rgb(181, 202, 86);
+}
+
+/*This one also took a while for the same reasons.*/
+body {
+    color: rgb(10, 10, 10);
+    background-color: linen;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+p {
+    padding-left: 20px;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 3em;
+    font-family: Champagne, Dobkin, cursive;
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+
+/* Aside and Blockquote Styles */
+aside h1 {
+    font-family: Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+}
+
+aside p {
+    font-size: 0.9em;
+}
+
+/* Navigation Styles. */
+header>nav>ul {
+    list-style: none;
+    background-color: rgb(150, 30, 200);
+}
+
+header>nav>ul>li:hover,
+header>nav>ul>li:active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+header>nav>ul>li>a:hover,
+header>nav>ul>li>a:active {
+    color: rgb(20, 20, 20);
+}
+
+header>nav>ul>li>a {
+    padding: 10px 0px 10px 0px;
+    color: white;
+}
+
+/* List Styles. */
+nav>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+nav>ul {
+    list-style: none;
+    font-size: 0.9em;
+}
+
+/* Footer Styles */
