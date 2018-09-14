@@ -3,7 +3,9 @@
 @font-face {
     font-family: Champagne;
     src: url("cac_champagne.woff") format('.woff'),
-        url("cac_champagne.ttf") format('.tff');
+        url("cac_champagne.ttf") format(
+        /*K*/
+        '.tff');
     font-family: Dobkin;
     src: url("DobkinPlain.woff") format('woff'),
         url("DobkinPlain.ttf") format('tff')
@@ -30,37 +32,60 @@ html {
 /*This one also took a while for the same reasons.*/
 body {
     color: rgb(10, 10, 10);
-    background-color: linen;
-    font-family: Geneva, Verdana, sans-serif;
+    background-color: rgb(230, 170, 255);
+    font-family: Geneva, Verdana
+        /*I*/
+        , sans-serif;
 }
 
+/*This is what determines the spacing on either side of the paragraph.*/
 p {
-    padding-left: 20px;
+    padding: 0px 45px 0px 20px;
 }
 
 /* Heading Styles */
+/*This determies the font, font size and spacing of the word welcome that is just there for some reason.*/
 h1 {
     font-size: 3em;
     font-family: Champagne, Dobkin, cursive;
     padding-left: 10px;
 }
 
+/*This makes the font size of the h2 headings*/
 h2 {
     font-size: 1em;
 }
 
+/*This makes the h2 headings in the right column*/
+section#rightcol nav h2 {
+    font-family: Champagne, Dobkin, cursive;
+    font-size: 1.6em;
+}
 
 /* Aside and Blockquote Styles */
+/*This determines the size and font of the title of the aside elements.*/
 aside h1 {
     font-family: Geneva, Verdana, sans-serif;
     font-size: 1.3em;
 }
 
+/*This changes the font size of the paragraph elements within the aside elements.*/
 aside p {
     font-size: 0.9em;
 }
 
+/*This derermines The formatting, font, and font size of the blockquotes.*/
+blockquote {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    margin-left
+    /*L*/
+    : 10px;
+    margin-right: 10px;
+}
+
 /* Navigation Styles. */
+/*I'm going to stop adding comments because I have run out of time, there's too much to do and I will lose more doing otherwise.*/
 header>nav>ul {
     list-style: none;
     background-color: rgb(150, 30, 200);
@@ -73,12 +98,42 @@ header>nav>ul>li:active {
 
 header>nav>ul>li>a:hover,
 header>nav>ul>li>a:active {
+    /*L*/
     color: rgb(20, 20, 20);
 }
 
 header>nav>ul>li>a {
     padding: 10px 0px 10px 0px;
-    color: white;
+    color: linen;
+}
+
+/* Section Styles */
+body>section#leftcol {
+    background-color: linen;
+}
+
+section aside:first-of-type {
+    background-color: rgb(231, 108, 108);
+}
+
+section aside h1 {
+    text-align: center
+        /*M*/
+    ;
+}
+
+section aside ul {
+    font-size: 0.85em;
+    line-height: 25px;
+}
+
+section aside:last-of-type {
+    background-color: goldenrod;
+    padding: 10px;
+}
+
+section aside p {
+    font-size: 0.85em;
 }
 
 /* List Styles. */
@@ -88,8 +143,18 @@ nav>ul>li>a {
 }
 
 nav>ul {
-    list-style: none;
+    list-style:
+        /*E*/
+        none;
     font-size: 0.9em;
 }
 
 /* Footer Styles */
+footer {
+    text-align: center;
+    background-color: dimgray;
+    color: linen;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 0px 5px 0px;
+    font-size: 0.9em;
+}
